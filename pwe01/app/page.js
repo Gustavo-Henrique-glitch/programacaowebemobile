@@ -7,8 +7,7 @@ export default function Home() {
       <main className={styles.main}>
        
           <h1>
-           
-           Bom dia
+            Aula de Programação Web e Mobile PWE_01
           </h1>
          
       </main>
