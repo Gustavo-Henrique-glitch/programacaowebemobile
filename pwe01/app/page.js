@@ -11,7 +11,7 @@ export default function Home() {
           <h2>Links</h2>
           <h3>
             <ul>
-            <l1><a href="https://react.dev/"> React</a></l1>
+            <l1><a href="https://react.dev/" target="_blank"> React</a></l1>
             </ul>
           </h3>
          
