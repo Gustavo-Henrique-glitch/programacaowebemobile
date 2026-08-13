@@ -9,9 +9,11 @@ export default function Home() {
             Aula de Programação Web e Mobile PWE01
           </h1>
           <h2>Links</h2>
-          <ul>
+          <h3>
+            <ul>
             <l1><a href="https://react.dev/"> React</a></l1>
-          </ul>
+            </ul>
+          </h3>
          
       </main>
     </div>
