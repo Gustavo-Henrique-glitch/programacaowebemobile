@@ -8,7 +8,7 @@ export default function Home() {
           <h1>
             Aula de Programação Web e Mobile PWE01
           </h1>
-     
+         
       </main>
     </div>
   );
