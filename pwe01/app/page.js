@@ -13,14 +13,15 @@ export default function Home() {
         <br />
         <h2>Links Úteis</h2>
         <h3>
-          <p><a href="https://react.dev/" target="_blank"> React</a></p>
-          <p><a href="https://nextjs.org/" target="_blank"> NextJS</a></p>
-          <p><a href="https://github.com/marciobueno1/pwm-2026-2" target="_blank"></a></p>
+          <p><a href="https://react.dev/" target="_blank"> <u>React</u></a></p>
+          <p><a href="https://nextjs.org/" target="_blank"> <u>NextJS</u></a></p>
+          <p><a href="https://github.com/marciobueno1/pwm-2026-2" target="_blank"> <u>git hub de PWE</u> </a></p>
         </h3>
+        <br />
         <h2> Slides HTML CSS JS</h2>
         <h3>  
-          <p><a href="https://christianosantos.com.br/files/cs1/construcao-de-sites-1.12.pdf" target="_blank"> Slide 1</a></p> 
-          <p><a href="https://christianosantos.com.br/files/cs2/construcao-de-sites-2.10.pdf" target="_blank"> Slide 2</a></p>
+          <p><a href="https://christianosantos.com.br/files/cs1/construcao-de-sites-1.12.pdf" target="_blank"> <u>Slide 1</u></a></p> 
+          <p><a href="https://christianosantos.com.br/files/cs2/construcao-de-sites-2.10.pdf" target="_blank"> <u>Slide 2</u></a></p>
         </h3>
         
         <br />
@@ -31,7 +32,7 @@ export default function Home() {
         <p><b>Lorem</b> Ipsum é simplesmente uma simulação de texto da indústria <i>tipográfica</i> e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
         <br />
         <hr />
-        <p>Lorem <strong>Ipsum</strong> é simplesmente uma simulação de texto da <em>indústria</em> tipográfica e de impressos, e vem sendo utilizado desde o <u></u>, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+        <p>Lorem <strong>Ipsum</strong> é simplesmente uma simulação de texto da <em>indústria</em> tipográfica e de impressos, e vem sendo utilizado desde o <u>Lorem</u>, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
         <br />
         <table border ="1">
           <thead>
