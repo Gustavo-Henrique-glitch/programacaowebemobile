@@ -24,7 +24,7 @@ export default function Home() {
         </h3>
         
         <br />
-        <h2>Aula 01</h2>
+        <h2>Aula 02</h2>
         <br />
         <img src ="images.jpeg" width ="300" height="200"></img>
         <br />
