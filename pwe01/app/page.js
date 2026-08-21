@@ -134,6 +134,11 @@ export default function Home() {
             
           </fieldset>
         </form>
+        <br/>
+        <div style={{color:"white",backgroundColor:"blue"}}>
+          <h3>Divisão 1</h3>
+        </div>
+        
       </main>
     </div>
   );
