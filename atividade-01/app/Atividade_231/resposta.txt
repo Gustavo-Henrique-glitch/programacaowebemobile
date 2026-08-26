@@ -1,0 +1,2 @@
+Eles não estão igualmente alinhados porque o pandding da div verde é de 25px.  
+E esse valor é adicionado ao tamanho da div fazendo com que a div verde seja maior que a vermelha.
