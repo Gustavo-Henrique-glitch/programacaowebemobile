@@ -1,0 +1,16 @@
+.pagina{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/paisagem01.jpg");
+}
+
+
+
+.fundovermelhoebordaverde{
+    background-color: red;
+    border-style: solid;
+    border-color: green;
+    border-width: 2px;
+}
