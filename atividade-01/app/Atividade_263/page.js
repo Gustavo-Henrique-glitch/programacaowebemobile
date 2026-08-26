@@ -9,7 +9,6 @@ export default function At263() {
           
           <div className={styles.caixaVerde}>
             <img src="./sapato01.jpg" alt="Imagem de paisagem"></img>
-            <br />
             <p>Tênis Branco</p>
             <p>R$ 300,00</p>
           </div>
