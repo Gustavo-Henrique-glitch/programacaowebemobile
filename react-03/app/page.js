@@ -10,8 +10,9 @@ export default function Home() {
   async function handleCarregarClick() {
     const response = await fetch('https://parseapi.back4app.com/classes/Tarefa', {
       headers: {
-        'X-Parse-Application-Id': 't4wZSEfltZ4QtFBZX5LY9hyyx4I45uAbjsrwzCAi',
-        'X-Parse-REST-API-Key': 'ZXx7xAlvFOyZith0HDnSpWdlHxnnATKsdgakYg4Q'
+        'X-Parse-Application-Id': '3D3UlNLrjn4oTywpWXsYkaZPwVKHDiiGCfm9RWcM',
+        'X-Parse-REST-API-Key': 'dqC4WTnEYlwFL7SHIRNUpd52VRqv3YSFD6aZgnuj',
+        'Content-Type': 'application/json'
       }
     });
     const data = await response.json();
@@ -21,8 +22,8 @@ export default function Home() {
     const response = await fetch('https://parseapi.back4app.com/classes/Tarefa', {
       method: 'POST',
       headers: {
-        'X-Parse-Application-Id': 't4wZSEfltZ4QtFBZX5LY9hyyx4I45uAbjsrwzCAi',
-        'X-Parse-REST-API-Key': 'ZXx7xAlvFOyZith0HDnSpWdlHxnnATKsdgakYg4Q',
+        'X-Parse-Application-Id': '3D3UlNLrjn4oTywpWXsYkaZPwVKHDiiGCfm9RWcM',
+        'X-Parse-REST-API-Key': 'dqC4WTnEYlwFL7SHIRNUpd52VRqv3YSFD6aZgnuj',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
