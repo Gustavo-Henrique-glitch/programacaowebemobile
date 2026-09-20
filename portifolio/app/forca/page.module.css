@@ -1,0 +1,199 @@
+.pagina {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 48px 24px 56px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.subtitulo {
+  margin-top: 8px;
+  color: var(--cor-secundaria);
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 32px;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.desenho {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  stroke: var(--cor-texto);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.colunaInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.palavra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.espaco {
+  width: 28px;
+  min-height: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid var(--cor-texto);
+}
+
+.registro {
+  font-size: 14px;
+  color: var(--cor-secundaria);
+}
+
+.registro + .registro {
+  margin-top: 6px;
+}
+
+.acertos {
+  color: var(--cor-acerto);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.erros {
+  color: var(--cor-erro);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.avisoVitoria,
+.avisoDerrota {
+  margin-top: 32px;
+  padding: 16px;
+  border-radius: var(--raio);
+  border: 1px solid;
+}
+
+.avisoVitoria {
+  border-color: var(--cor-acerto);
+  color: var(--cor-acerto);
+}
+
+.avisoDerrota {
+  border-color: var(--cor-erro);
+  color: var(--cor-erro);
+}
+
+.teclado {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.linhaTeclado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tecla,
+.teclaCerta,
+.teclaErrada {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  cursor: pointer;
+}
+
+.tecla {
+  color: var(--cor-texto);
+}
+
+.tecla:hover:not(:disabled) {
+  background-color: #f9fafb;
+}
+
+.tecla:disabled {
+  color: var(--cor-secundaria);
+  cursor: default;
+}
+
+.teclaCerta {
+  color: var(--cor-acerto);
+  border-color: var(--cor-acerto);
+  cursor: default;
+}
+
+.teclaErrada {
+  color: #9ca3af;
+  cursor: default;
+}
+
+.areaBotao {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  font-size: 15px;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  border-color: var(--cor-texto);
+}
+
+.rodape {
+  border-top: 1px solid var(--cor-borda);
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--cor-secundaria);
+}
+
+@media (max-width: 640px) {
+  .tabuleiro {
+    grid-template-columns: 1fr;
+  }
+
+  .colunaForca {
+    display: flex;
+    justify-content: center;
+  }
+
+  .titulo {
+    font-size: 28px;
+  }
+
+  .tecla,
+  .teclaCerta,
+  .teclaErrada {
+    width: 36px;
+    height: 36px;
+  }
+}

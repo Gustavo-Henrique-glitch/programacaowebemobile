@@ -1,150 +1,130 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+.pagina {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 48px 24px 24px;
 }
 
-.main {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+.topo {
+  padding-bottom: var(--espaco-secao);
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
-}
-
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
+.nome {
+  font-size: 32px;
   font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+.subtitulo {
+  margin-top: 8px;
+  color: var(--cor-secundaria);
 }
 
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
+.contatoTopo {
+  margin-top: 12px;
   font-size: 14px;
 }
 
-.ctas a {
+.separador {
+  color: var(--cor-secundaria);
+  margin: 0 8px;
+  user-select: none;
+}
+
+.secao {
+  padding-top: var(--espaco-secao);
+  padding-bottom: var(--espaco-secao);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.tituloSecao {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.entrada + .entrada {
+  margin-top: 32px;
+}
+
+.tituloEntrada {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.auxiliar {
+  color: var(--cor-secundaria);
+  font-size: 14px;
+}
+
+.tecnologias {
+  margin-top: 16px;
+  color: var(--cor-secundaria);
+  font-size: 14px;
+}
+
+.lista {
+  padding-left: 20px;
+}
+
+.lista li + li {
+  margin-top: 4px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
+  flex-direction: column;
+}
+
+.card .auxiliar {
+  margin-top: 8px;
+}
+
+.tags {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--cor-secundaria);
+}
+
+.linksCard {
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+.rotulo {
   font-weight: 500;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.secao p + p {
+  margin-top: 4px;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.rodape {
+  border-top: 1px solid var(--cor-borda);
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--cor-secundaria);
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+@media (max-width: 640px) {
+  .galeria {
+    grid-template-columns: 1fr;
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  .nome {
+    font-size: 28px;
   }
-}
-
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
-  }
-}
-
-.code {
-  font-family: var(--font-geist-mono);
-  font-size: 0.9em;
-  background: color-mix(in srgb, currentColor 8%, transparent);
-  padding: 0.1em 0.4em;
-  border-radius: 6px;
 }
